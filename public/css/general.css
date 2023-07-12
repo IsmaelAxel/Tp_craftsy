@@ -1,0 +1,23 @@
+:root{
+    --colorNaranja:rgb(239,76,39);
+    --colorCeleste:rgb(188,242,255);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('/img/bg-2.png');
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #ffff;
+}
+li{
+    list-style: none;
+}
+ul{
+    padding: 0;
+}

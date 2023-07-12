@@ -1,0 +1,173 @@
+/* HEADER */
+.home__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--colorNaranja);
+}
+.home__header div img{
+    margin: 30px auto;
+    width: 120px;
+}
+.home__header .home__header__nav--menu ul li , .home__header .home__header__nav--login ul li {
+    display: none;
+}
+.home__header--bars{
+    background-color: var(--colorCeleste);
+    padding: 10px;
+    margin: 0 auto 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+/* MAIN */
+.home__main__section--products{
+    margin: 30px  10px 0;
+    background-color: #ffffff;
+    padding: 10px;
+}
+.home__main__section--article-img img{
+    width: 100%;
+}
+.home__main__section--article-title{
+    margin: 20px 0;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+.home__main__section--article-more{
+    display: inline-block;
+    padding: 8px;
+    margin: 20px 0;
+    background-color: var(--colorNaranja);
+
+}
+/* ASIDES */
+.home__main__section--asides{
+    margin: 10px  10px 0;
+}
+.home__main__section--asides-box h2{
+ background-color: #ffffff;
+ padding: 3px;
+ border: 1px solid grey;
+ margin-bottom: 5px;
+}
+.home__main__article--tutorial{
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 5px;
+    border: 1px solid grey;
+    margin-bottom: 3px;
+}
+.home__main__article--tutorial img{
+    margin-right: 5px;
+}
+.home__main__article--publicidad{  
+ display: flex;
+ background-color: #ffffff;
+ padding: 10px;
+ justify-content: space-between;
+ flex-direction: column;
+ border: 1px solid grey;
+}
+.home__main__article--publicidad img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.home__main__article--publicidad img:last-child{
+    margin-bottom: 0;
+}
+/* FOOTER */
+.home__footer{
+    margin-top: 10px;
+    background-color: var(--colorNaranja);
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.home__footer--box div img{
+    margin: 30px auto;
+    width: 120px;
+}
+/* Media Querys */
+@media (min-width: 481px){
+    /* MAIN */
+    .home__main__section--products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    .home__main__section--article{
+        width: 45%;
+    }
+    /* ASIDE */
+    .home__main__article--publicidad{  
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+        flex-direction: row;
+       }
+       .home__main__article--publicidad img{
+           width: 200px;
+           margin-bottom: 0;
+       }
+
+}
+@media (min-width: 600px){
+    /* HEADER */
+    .home__header{
+        flex-direction: row;  
+        justify-content:space-between;
+        margin: 10px;
+
+           
+    }
+    .home__header--bars{
+        display: none;
+    }
+    .home__header .home__header__nav--menu ul li, .home__header .home__header__nav--login ul li {
+        display: block;
+    }
+    .home__header--box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .home__header__nav--menu ul{
+        display: flex;
+        gap: 10px;
+        text-transform: uppercase;
+        font-size: .8rem;
+    }
+    .home__header div img{
+        margin: 15px 10px;
+        width: 90px;
+    }
+    .home__header__nav--login ul{
+        display: flex;
+        gap: 10px;
+        text-transform: uppercase;
+        font-size: .8rem;
+        margin-right: 5px;
+    }
+    /* ASIDE */
+    .home__main__section--tutoriales{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .home__main__article--tutorial{
+        width: 350px;
+    }
+    .home__main__article--publicidad{  
+        display: flex;
+        justify-content: space-between;
+       }
+    .home__main__article--publicidad img{
+           width: 350px;
+           margin-bottom: 0;
+       }
+
+}
