@@ -53,15 +53,14 @@
 }
 .home__main__article--tutorial{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     background-color: #ffffff;
     padding: 5px;
     border: 1px solid grey;
     margin-bottom: 3px;
 }
-.home__main__article--tutorial img{
-    margin-right: 5px;
-}
+
 .home__main__article--publicidad{  
  display: flex;
  background-color: #ffffff;
@@ -121,6 +120,7 @@
         flex-direction: row;  
         justify-content:space-between;
         margin: 10px;
+        font-weight: 500;
 
            
     }
@@ -155,19 +155,61 @@
     /* ASIDE */
     .home__main__section--tutoriales{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
     }
     .home__main__article--tutorial{
-        width: 350px;
+        width: 280px;
     }
     .home__main__article--publicidad{  
         display: flex;
         justify-content: space-between;
        }
     .home__main__article--publicidad img{
-           width: 350px;
+           width: 240px;
            margin-bottom: 0;
        }
 
+}
+@media (min-width: 700px){
+    .home__main__article--tutorial{
+        width: 320px;
+    }
+    .home__main__article--publicidad img{
+        width: 100%;
+    }
+}
+@media (min-width: 1024px){
+    /* HEADER */
+    .home__header{
+        margin: 10px 100px 0;
+    }
+    /* MAIN */
+    .home__main{
+        margin: 0 70px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .home__main__section--products{
+        padding: 10px 0;
+        margin: 0 10px 0;
+        justify-content: space-around;
+    }
+     .home__main__article--tutorial{
+        flex-direction: column;
+    }
+    .home__main__article--publicidad{
+        flex-direction: column;
+    } 
+    .home__main__section--asides{
+        width: 25%;
+        margin: 0px  10px 0;
+    }
+    .home__main__article--tutorial{
+        flex-direction: row;
+    }
+    .home__main__article--publicidad img{
+        width: 100%;
+    }
 }
