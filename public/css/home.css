@@ -169,7 +169,9 @@
            width: 240px;
            margin-bottom: 0;
        }
-
+    .home__footer{
+        margin: 10px 10px 0;
+    }
 }
 @media (min-width: 700px){
     .home__main__article--tutorial{
@@ -211,5 +213,8 @@
     }
     .home__main__article--publicidad img{
         width: 100%;
+    }
+    .home__footer{
+        margin: 10px 100px 0;
     }
 }
